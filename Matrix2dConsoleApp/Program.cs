@@ -1,6 +1,5 @@
 ﻿using Matrix2dLib;
 
-<<<<<<< HEAD
 Console.WriteLine("\n===============");
 Console.WriteLine("Matrix2d:");
 Console.WriteLine("===============");
@@ -70,14 +69,3 @@ Console.WriteLine($"[[{array1[0, 0]}, {array1[0, 1]}], [{array1[1, 0]}, {array1[
 Console.WriteLine("Parsowanie macierzy ze stringa:");
 var parsed1 = Matrix2dArray.Parse("[[5, 6], [7, 8]]");
 Console.WriteLine(parsed1);
-=======
-Matrix2d m = new Matrix2d();
-Console.WriteLine(m);
-
-Matrix2d m1 = new Matrix2d(1, 2, 3, 4);
-Console.WriteLine(m1);
-
-Matrix2d m2 = Matrix2d.Transpose(m1);
-
-var m3 = (int[,])m2;
->>>>>>> 4008526544992d06026566b5aa647dea19dd6432
