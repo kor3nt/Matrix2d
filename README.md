@@ -31,7 +31,7 @@ Zrealizuj je jako property typu **get**
 10. Zaimplementuj operator jawnego rzutowania obiektu **Matrix2D** na typ tablicy regularnej **int[2,2]**
 11. Zaimplementuj metodę klasy **Parse()** parsującą **string** do obiektu **Matrix2D**, działającą w odwrotny sposób niż **ToString()** -- na przykład **Parse("[2, 1], [3, 2]]")** utworzy poprawnie obiekt, zaś **Parse("[[2, 1] [3, 2]]")** zgłosi wyjątek **FormatException** - w tym przypadku brak przecinka w środku
 
-Do oceny przesyłasz skompresowane solution (w formacie .zip) zawierające:
+## Do oceny przesyłasz skompresowane solution (w formacie .zip) zawierające:
 1. projekt typu class library zawierający implementację klasy
 2. projekt typu unit tests zawierający testy jednostkowe Twojej implementacji
 3. projekt typu console app zawierający przykładowy program pokazujący możliwości zaimplementowanego przez Ciebie typu
