@@ -12,11 +12,8 @@
     <TestingPlatformShowTestsFailure>true</TestingPlatformShowTestsFailure>
   </PropertyGroup>
 
-<<<<<<< HEAD
   <ItemGroup>
     <ProjectReference Include="..\Matrix2dLib\Matrix2dLib.csproj" />
   </ItemGroup>
 
-=======
->>>>>>> 4008526544992d06026566b5aa647dea19dd6432
 </Project>
