@@ -1,4 +1,6 @@
-﻿using System.Text.RegularExpressions;
+﻿#nullable disable
+using System;
+using System.Text.RegularExpressions;
 
 namespace Matrix2dLib
 {
