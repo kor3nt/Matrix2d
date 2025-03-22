@@ -1,6 +1,9 @@
 ﻿#nullable disable
 using System;
+<<<<<<< HEAD
 using System.Text.RegularExpressions;
+=======
+>>>>>>> 4008526544992d06026566b5aa647dea19dd6432
 
 namespace Matrix2dLib
 {
@@ -15,7 +18,11 @@ namespace Matrix2dLib
           -------
          */
 
+<<<<<<< HEAD
         // Constructor
+=======
+        // construcotr
+>>>>>>> 4008526544992d06026566b5aa647dea19dd6432
         public Matrix2d(int a, int b, int c, int d)
         {
             this.a = a;
@@ -26,9 +33,15 @@ namespace Matrix2dLib
 
         public Matrix2d() : this(1, 0, 0, 1) { }
 
+<<<<<<< HEAD
         public Matrix2d Id => new Matrix2d(1, 0, 0, 1); // Identity matrix - property type get 
 
         public Matrix2d Zero => new Matrix2d(0, 0, 0, 0); // Zero matrix - property type get
+=======
+        public Matrix2d Id => new Matrix2d(1, 0, 0, 1); // property type get 
+
+        public Matrix2d Zero => new Matrix2d(0, 0, 0, 0); // property type get
+>>>>>>> 4008526544992d06026566b5aa647dea19dd6432
 
         public override string ToString() => $"[[{a}, {b}], [{c}, {d}]]";
 
@@ -43,6 +56,7 @@ namespace Matrix2dLib
         public static bool operator == (Matrix2d left, Matrix2d right) => left.Equals(right);
         public static bool operator != (Matrix2d left, Matrix2d right) => !(left == right);
 
+<<<<<<< HEAD
         // Addition
         public static Matrix2d operator +(Matrix2d left, Matrix2d right) => new Matrix2d(left.a + right.a, left.b + right.b, left.c + right.c, left.d + right.d);
 
@@ -88,5 +102,29 @@ namespace Matrix2dLib
 
             return new Matrix2d(a, b, c, d);
         }
+=======
+        // Add
+        public static Matrix2d operator +(Matrix2d left, Matrix2d right) => new Matrix2d(left.a + right.a, left.b + right.b, left.c + right.c, left.d + right.d);
+
+        // Minus
+        public static Matrix2d operator -(Matrix2d left, Matrix2d right) => new Matrix2d(left.a - right.a, left.b - right.b, left.c - right.c, left.d - right.d);
+
+        // Multiple
+        public static Matrix2d operator *(Matrix2d left, Matrix2d right) => new Matrix2d(left.a * right.a - left.b * right.c,
+                                                                                         left.a * right.b - left.b * right.d,
+                                                                                         left.c * right.a - left.d * right.c,
+                                                                                         left.c * right.b - left.d * right.d);
+        
+        // Multiple by number
+        public static Matrix2d operator *(int k, Matrix2d m) => new Matrix2d(k * m.a, k * m.b, k * m.c, k * m.d);
+        public static Matrix2d operator *(Matrix2d m, int k) => k * m;
+
+        public static Matrix2d Transpose(Matrix2d m) => new Matrix2d(m.a, m.c, m.b, m.d);
+
+        // change to int [2,2]
+        public static explicit operator int[,](Matrix2d m) => new int[2, 2] { { m.a, m.b }, { m.c, m.d } };
+
+
+>>>>>>> 4008526544992d06026566b5aa647dea19dd6432
     }
 }
